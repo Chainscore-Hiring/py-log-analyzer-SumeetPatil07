@@ -171,3 +171,14 @@ python worker.py --id alice --port 8001 --coordinator http://localhost:8000
 python worker.py --id bob --port 8002 --coordinator http://localhost:8000
 python worker.py --id charlie --port 8003 --coordinator http://localhost:8000
 ```
+to start
+python coordinator.py --port 8000
+
+python worker.py --id alice --port 8001 --coordinator http://localhost:8000
+python worker.py --id bob --port 8002 --coordinator http://localhost:8000
+python worker.py --id charlie --port 8003 --coordinator http://localhost:8000
+
+generetee test log 
+# In test_data.py
+generate_test_logs(10, "sample_log.txt")
+
